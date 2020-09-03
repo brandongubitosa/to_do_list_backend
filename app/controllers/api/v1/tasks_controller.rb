@@ -19,7 +19,7 @@ class Api::V1::TasksController < ApplicationController
     def destroy
         task = Task.find(params[:id])
 
-        monster.destroy!
+        task.destroy!
 
         render json: {}
     end
