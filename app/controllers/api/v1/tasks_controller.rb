@@ -26,7 +26,7 @@ class Api::V1::TasksController < ApplicationController
 
     private
 
-    def monster_params
+    def task_params
         params.require(:task).permit(:text, :category)
     end
 
